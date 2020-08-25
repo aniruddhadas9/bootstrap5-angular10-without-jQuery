@@ -1,0 +1,15 @@
+<cfs-header
+  [header]="header"
+  (middleButtonClick)="openLocationChangeModel($event)">
+</cfs-header>
+
+
+<cfs-alerts></cfs-alerts>
+
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+
+<cfs-footer
+  [footer]="footer">
+</cfs-footer>
