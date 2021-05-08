@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.modalDirect = new Bootstrap.Modal(this.input, {});
+    this.modalDirect = new Bootstrap.Modal(this.input.nativeElement, {});
     console.log('ngAfterViewInit: %o', this.input);
   }
 
